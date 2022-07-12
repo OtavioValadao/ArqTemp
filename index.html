@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formularioidcliente.css">
+    <title>Clientes</title>
+</head>
+
+<body>
+    <a href="home.php">Voltar</a>
+
+    <div class="Box">
+        <form action="clientes.php" method="POST">
+            <fieldset>
+                <legend class="leg"><strong>Preencha seus dados </strong></legend>
+                <br><br>
+                <div class="inputBox">
+                    <label for="Cpf" class="labelInput"><strong>CPF</strong></label>
+                    <input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}" \
+                        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="Telefone" class="labelIpunt"><strong>Telefone</strong></label>
+                    <input type="text" name="telefone" class="inputUser">
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="Endereço" class="labelInput"><strong>Endereço </strong></label>
+                    <input type="text" name="endereco" class="inputUser">
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="Email" class="labelInput"><strong>Email</strong></label>
+                    <input type="text" name="email" class="inputUser">
+                </div>
+                <br><br>
+                <div class="botão">
+                    <button type="submit" name="submit"> <strong>Enviar</strong></button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
